@@ -1,0 +1,38 @@
+{
+  "datasets": ["ml-100k", "ml-1m"],
+  "models": ["fpmc", "mf", "itemknn"],
+  "prepro": "5filter",
+  "positive_threshold": 4,
+  "test_method": "tloo",
+  "validation_method": "tloo",
+  "optimization_metric": "ndcg",
+  "trials": 20,
+  "epochs": 10,
+  "topk": 10,
+  "candidate_count": 1000,
+  "gpu": "",
+  "sample_method": "uniform",
+  "sample_ratio": 0,
+  "loss_type": "BPR",
+  "optimizer": "adam",
+  "search_spaces": {
+    "fpmc": {
+      "factors": [16, 32, 64],
+      "lr": [0.001, 0.003, 0.01],
+      "reg_2": [0.00001, 0.0001, 0.001],
+      "num_ng": [1, 2],
+      "batch_size": [256, 512]
+    },
+    "mf": {
+      "factors": [16, 32, 64],
+      "lr": [0.001, 0.003, 0.01],
+      "reg_1": [0, 0.001],
+      "reg_2": [0.00001, 0.0001, 0.001],
+      "num_ng": [1, 2],
+      "batch_size": [256, 512]
+    },
+    "itemknn": {
+      "maxk": [20, 40, 80]
+    }
+  }
+}

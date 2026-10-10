@@ -1,0 +1,11 @@
+{
+  "best_validation_score": 0.012839284082625644,
+  "best_params": {
+    "batch_size": 256,
+    "factors": 64,
+    "lr": 0.001,
+    "num_ng": 2,
+    "reg_1": 0,
+    "reg_2": 1e-05
+  }
+}

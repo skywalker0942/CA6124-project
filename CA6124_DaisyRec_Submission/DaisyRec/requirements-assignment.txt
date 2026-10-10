@@ -1,0 +1,7 @@
+# Install in addition to the pinned DaisyRec requirements for the CA6124 assignment.
+numpy>=1.26,<2
+hyperopt>=0.2.7,<0.3
+PyYAML>=6,<7
+colorlog>=6,<7
+colorama>=0.4,<1
+requests>=2.31
